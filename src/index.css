@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'digital-clock-font';
+  src: url('./fonts/digital-7.ttf');
+}
+
+body {
+  background-color: #6ba8a9;
+  font-family: 'digital-clock-font', sans-serif;
+}
+
+.digital {
+  font-family: 'digital-clock-font', sans-serif;
+}
