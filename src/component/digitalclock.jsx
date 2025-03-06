@@ -25,10 +25,16 @@ function DigitalClock({ time, onButtonClick }) {
     })
   }
 
-  // with error
-  const hours = () => {
-    if((checkHours >= 0 && checkHours <= 12) && milTime === true) return time.getHours();
-    if((checkHours > 12 && checkHours < 24) || milTime === false) return time.getHours() - 12;
+  const hours = () => { 
+    if((checkHours > 12 && checkHours < 24) && milTime === false){ 
+      return time.getHours();
+    }else{
+      if(checkHours <= 12){
+        return time.getHours();
+      }else{
+        return time.getHours() - 12;
+      }
+    }
   } 
 
   const handleValueClick = () => {
