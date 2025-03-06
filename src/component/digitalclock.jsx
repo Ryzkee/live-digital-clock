@@ -26,7 +26,7 @@ function DigitalClock({ time, onButtonClick }) {
   }
 
   const hours = () => { 
-    if((checkHours > 12 && checkHours < 24) && milTime === false){ 
+    if(milTime === false){ 
       return time.getHours();
     }else{
       if(checkHours <= 12){
