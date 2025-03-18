@@ -96,7 +96,7 @@ function DigitalClock({ time, onButtonClick }) {
                 </p>
             </div>
             <div className='w-[7%] h-[75%] flex justify-end items-end '>
-              {button ? <Post /> : <p className='text-[25pt] opacity-[0.2] text-white'>AM</p>}
+              {button ? <Post milTime={milTime}/> : <p className='text-[25pt] opacity-[0.2] text-white'>AM</p>}
             </div>
         </div>
         <div className='w-full h-[20%] flex items-end justify-between'>

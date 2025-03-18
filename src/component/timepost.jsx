@@ -1,14 +1,19 @@
 import React from 'react';
 
-function Post() {
+function Post({milTime}) {
   const date = new Date();
   const hrs = date.getHours();
-
+  
+  console.log({milTime});
   function postTime() {
-    if (hrs >= 0 && hrs < 12) {
-      return "AM";
-    } else {
-      return "PM";
+    if(milTime === false){
+      return <p className='text-[25pt] opacity-[0.2] text-white'>AM</p>;
+    }else{
+      if (hrs >= 0 && hrs < 12) {
+        return "AM";
+      } else {
+        return "PM";
+      }
     }
   }
 
